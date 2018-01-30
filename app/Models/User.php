@@ -28,7 +28,7 @@ class User extends Authenticatable
     ];
 
 
-    public function gravater($size = '100')
+    public function gravatar($size = '100')
     {
         $hash = md5(strtolower(trim($this->ributton['email'])));
         return "http://www.gravatar.com/avatar/$hash?s=$size";
